@@ -1,0 +1,6 @@
+hours=input("hours")
+i_hours = int(hours)
+rate=input("rate")
+float_rate= float(rate)
+pay=int(hours) * float(rate)
+print(float(pay))
