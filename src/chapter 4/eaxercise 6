@@ -1,0 +1,20 @@
+def computepay():
+    try:
+        hours=float(hours)
+        rate=int(rate)
+        if hours <= 40:
+            pay=hours*rate
+            print("pay:",pay)
+
+        else:
+            # we calculate the pay for the hours less or equal to 40
+            fullpay=hours*rate
+
+            # we are getting the overtime
+            overtime=hours-40
+
+            # we calculate the pay for the overtime but we divide by 2
+            otp=(overtime*rate)/2
+
+            # we calculate the pay by adding the fullpay and the otp
+            pay=fullpay+otp
